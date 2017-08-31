@@ -60,6 +60,7 @@ function loadLoginForm () {
               // Take some action
               if (request.status === 200) {
                   alert('Your Username has been Registered Successfully!! Login To Continue...');
+                  alert('Thank You For Registering!!From Now On You Can Comment On The Articles....');
                   register.value = 'Registered!';
               }
                  else if (request.status === 500) {
