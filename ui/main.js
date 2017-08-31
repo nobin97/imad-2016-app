@@ -63,7 +63,7 @@ function loadLoginForm () {
                   register.value = 'Registered!';
               }
                  else if (request.status === 500) {
-                  alert($username + ' already Registered....Try another one!!');
+                  alert({$username} + ' already Registered....Try another one!!');
                   register.value = 'Register';
               } else {
                   alert('oops!!...Could not register the user.Please Try Again Later.');
