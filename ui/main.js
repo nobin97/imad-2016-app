@@ -60,8 +60,12 @@ function loadLoginForm () {
               if (request.status === 200) {
                   alert('User created successfully');
                   register.value = 'Registered!';
+              }
+                 else if (request.status === 500) {
+                  alert('Username already exists....Try another one!!');
+                  register.value = 'Register';
               } else {
-                  alert('Could not register the user');
+                  alert('oops!!...Could not register the user.Please Try Again Later.');
                   register.value = 'Register';
               }
           }
