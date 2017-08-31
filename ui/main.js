@@ -127,7 +127,7 @@ function loadArticles () {
         }
     };
     
-    request.open('GET', 'nobin97.imad.hasura-app.io/get-articles', true);
+    request.open('GET', '/get-articles', true);
     request.send(null);
 }
 
