@@ -90,7 +90,7 @@ function loadComments () {
         }
     };
     
-    request.open('GET', 'nobin97.imad.hasura-app.io/get-comments/' + currentArticleTitle, true);
+    request.open('GET', '/get-comments/' + currentArticleTitle, true);
     request.send(null);
 }
 
