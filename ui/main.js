@@ -41,7 +41,7 @@ function loadLoginForm () {
         var password = document.getElementById('password').value;
         console.log(username);
         console.log(password);
-        request.open('POST', 'nobin97.imad.hasura-app.io/login', true);
+        request.open('POST', '/login', true);
         request.setRequestHeader('Content-Type', 'application/json');
         request.send(JSON.stringify({username: username, password: password}));  
         submit.value = 'Logging in...';
@@ -119,10 +119,10 @@ function loadArticles () {
                     <a href="/articles/${articleData[i].title}">${articleData[i].heading}</a>
                     (${articleData[i].date.split('T')[0]})</li>`;
                 }
-                content += "</ul>"
+                content += "</ul>";
                 articles.innerHTML = content;
             } else {
-                articles.innerHTML('Oops! Could not load all articles!')
+                articles.innerHTML('Oops! Could not load all articles!');
             }
         }
     };
