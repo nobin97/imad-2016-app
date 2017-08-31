@@ -24,7 +24,6 @@ function loadLoginForm () {
                   submit.value = 'Success!';
               } else if (request.status === 403) {
                   alert('Invalid Username/Password. Try again!');
-                  submit.value = 'Invalid credentials. Try again!';
               } else if (request.status === 500) {
                   alert('Something went wrong on the server');
                   submit.value = 'Login';
