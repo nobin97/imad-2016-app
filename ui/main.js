@@ -59,7 +59,7 @@ function loadLoginForm () {
           if (request.readyState === XMLHttpRequest.DONE) {
               // Take some action
               if (request.status === 200) {
-                  alert('User created successfully');
+                  alert('Your Username has been Registered Successfully!! Login To Continue...');
                   register.value = 'Registered!';
               }
                  else if (request.status === 500) {
