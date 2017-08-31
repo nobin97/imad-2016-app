@@ -151,8 +151,7 @@ app.get('/check-login', function (req, res) {
 
 app.get('/logout', function (req, res) {
    delete req.session.auth;
-   
-   window.location.replace("http://nobin97.imad.hasura-app.io");
+   res.replace('http://nobin97.imad.hasura-app.io');
 });
 
 var pool = new Pool(config);
