@@ -48,13 +48,14 @@ function loadLoginForm () {
         
     };
     
+    var username = document.getElementById('username').value;
     var register = document.getElementById('register_btn');
     register.onclick = function () {
         // Create a request object
         var request = new XMLHttpRequest();
         
         // Capture the response and store it in a variable
-        request.onreadystatechange = function () {
+        request.onreadystatechange = function (username) {
           if (request.readyState === XMLHttpRequest.DONE) {
               // Take some action
               if (request.status === 200) {
@@ -62,7 +63,7 @@ function loadLoginForm () {
                   register.value = 'Registered!';
               }
                  else if (request.status === 500) {
-                  alert('Username already exists....Try another one!!');
+                  alert('{$username} already Registered....Try another one!!');
                   register.value = 'Register';
               } else {
                   alert('oops!!...Could not register the user.Please Try Again Later.');
