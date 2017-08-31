@@ -27,12 +27,11 @@
         <div class="center">
         <h3>Thanks For Visiting!!</h3>
         </div>
-<div id="chat_webappchat"></div><p><a href="http://chatovod.com/" target="_blank"></a></p>
 <script type="text/javascript">
     var chatovodOnLoad = chatovodOnLoad || [];
     chatovodOnLoad.push(function() {
-        chatovod.addChatToDivId("chat_webappchat", {host: "webappchat.chatovod.com",
-            width: "100%", height: 380, defaultLanguage: "en"});
+        chatovod.addChatButton({host: "webappchat.chatovod.com", align: "bottomRight",
+            width: 600, height: 380, defaultLanguage: "en"});
     });
     (function() {
         var po = document.createElement('script');
@@ -42,5 +41,6 @@
         s.parentNode.insertBefore(po, s);
     })();
 </script>
+
     </body>
 </html>
