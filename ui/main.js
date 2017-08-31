@@ -101,7 +101,7 @@ function loadLogin () {
         }
     };
     
-    request.open('GET', '/check-login', true);
+    request.open('GET', 'nobin97.imad.hasura-app.io/check-login', true);
     request.send(null);
 }
 
