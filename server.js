@@ -150,8 +150,7 @@ app.get('/check-login', function (req, res) {
 });
 
 app.get('/logout', function (req, res) {
-   delete req.session.auth;
-   window.location.replace('nobin97.imad.hasura-app.io/');
+   alert('logged out');
    res.send('<html><body>Logged out Successfully!<br/><br/><a href="/">Back to homepage</a></body></html>');
 
    
